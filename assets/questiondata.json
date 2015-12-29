@@ -1,0 +1,534 @@
+{
+	"questionData": [{
+		"quesNo": "1",
+		"ques": "What best describes how the police initially got involved in your case?",
+		"quesType": "single_choice",
+		"optnArry": [{
+			"text": "The police pulled you over in a traffic stop",
+			"activity": "2","back_activity":"0"
+		}, {
+			"text": "You drove up to a police \"RIDE\" spotcheck",
+			"activity": "2"
+,"back_activity":"0"
+		}, {
+			"check": "0",
+			"text": "You were involved in a traffic  accident",
+			"desc": "",
+			"activity": "4","back_activity":"0"
+		}, {
+			"text": "You were sleeping/sitting in an unmoving vehicle and police came up to you",
+			"activity": "3"
+,"back_activity":"0"
+		}, {
+			"text": "Police came to your house and you were already inside",
+			"activity": "5"
+,"back_activity":"0"
+		}]
+	}, {
+		"quesNo": "2",
+		"ques": "At the time the police first spoke to you, how many people were in your vehicle?",
+		"quesType": "single_choice",
+		"optnArry": [{
+			"text": "You were by yourself in the vehicle.",
+			"activity": "6","back_activity":"1"
+		}, {
+			"text": "There was one passenger in the front passenger seat.",
+			"activity": "6","back_activity":"1"
+		}, {
+			"text": "There were multiple people in my vehicle.",
+			"activity": "6","back_activity":"1"
+		}]
+	}, {
+		"quesNo": "3",
+		"ques": "Were you in the driver’s seat of the vehicle, or were you somewhere else in the vehicle when the police arrived?",
+		"quesType": "single_choice",
+		"optnArry": [{
+			"text": "Driver’s seat",
+			"activity": "6","back_activity":"1"
+		}, {
+			"text": "Somewhere else (i.e. passenger seat, back seat, trunk…)",
+			"activity": "6","back_activity":"1"
+		}]
+	}, {
+		"quesNo": "4",
+		"ques": "When the police arrived at the accident were you in your vehicle or standing outside the vehicle?",
+		"quesType": "single_choice",
+		"optnArry": [{
+			"text": "Inside vehicle",
+			"activity": "6","back_activity":"1"
+		}, {
+			"text": "Outside of your vehicle",
+			"activity": "6","back_activity":"1"
+		}]
+	}, {
+		"quesNo": "5",
+		"ques": "While you were at home – after driving but before the police arrived. Did you drink alcohol?",
+		"quesType": "single_choice",
+		"optnArry": [{
+			"text": "Yes",
+			"activity": "6","back_activity":"1"
+		}, {
+			"text": "No",
+			"activity": "6","back_activity":"1"
+		}]
+	}, {
+		"quesNo": "6",
+		"ques": "After speaking to you, did the police",
+		"quesType": "double_single_choice",
+		"optnArry": [{
+			"text": "ask you to provide a breath sample at the roadside into a small handheld breathalyser",
+			"subQues": "Did the officer already have the handheld breathalyser with him or in his car?",
+			"subQuesArr": [{
+				"text": "He had it with him or he got it within a couple minutes.",
+				"activity": "7"
+, "back_activity_to_two":"2",
+               "back_activity_to_three":"3",
+               "back_activity_to_four":"4",
+               "back_activity_to_five":"5"
+			}, {
+				"text": "He didn't have it with him and we had to wait more than 5 minutes for one to arrive.",
+				"activity": "7"
+, "back_activity_to_two":"2",
+                 "back_activity_to_three":"3",
+               "back_activity_to_four":"4",
+               "back_activity_to_five":"5"
+			}]
+		}, {
+			"text": "Tell you that you were under arrest without making you blow into the small handheld breathalyser at the roadside.",
+			"activity": "9","back_activity_to_two":"2",
+                "back_activity_to_three":"3",
+               "back_activity_to_four":"4",
+               "back_activity_to_five":"5"
+		}]
+	}, {
+		"quesNo": "7",
+		"ques": "Prior to you dealing with police, did you drink a large quantity of alcohol in the 5en dash10 minutes before you met the officer?",
+		"quesType": "double_single_choice",
+		"optnArry": [{
+			"text": "Yes",
+			"subQues": "Did you tell the officer about this recent drinking",
+			"subQuesArr": [{
+				"text": "yes",
+				"activity": "8","back_activity":"6"
+			}, {
+				"text": "No.",
+				"activity": "8","back_activity":"6"
+			}]
+		}, {
+			"text": "No.",
+			"activity": "9","back_activity":"6"
+		}]
+	}, {
+		"quesNo": "8",
+		"ques": "You blew into a small handheld breathalyser at the roadside. Did you:",
+		"quesType": "single_choice",
+		"optnArry": [{
+			"text": "Blow a “Fail” result",
+			"activity": "9", "back_activity":"7"
+		}, {
+			"text": "Blow a result other than “Fail” but the police officer arrested you anyway.",
+			"activity": "9", "back_activity":"7"
+		}, {
+			"text": "Provide several breath samples but not get a ‘proper reading’ and then get charged for refusing to provide a suitable breath sample.",
+			"activity": "9", "back_activity":"7"
+		}]
+	}, {
+		"quesNo": "9",
+		"ques": "Please indicate what time the following things happened:",
+		"quesType": "nine_view",
+		"optnArry": [{
+			"text": "The police officer first saw you at what time?",
+			"desc": "",
+			"activity": "10","back_activity":"6",
+"back_activity_to_eight":"8"
+		}, {
+			"text": "The police officer first spoke to you how many minutes later?",
+			"desc": "",
+			"activity": "10","back_activity":"6",
+"back_activity_to_eight":"8"
+		}, {
+			"text": "After the officer first spoke to you, how many minutes went by before he or she arrested you?",
+			"desc": "",
+			"activity": "10","back_activity":"6",
+"back_activity_to_eight":"8"
+		}, {
+			"text": "After you were arrested, how many minutes went by before the officer told you about your right to speak to a lawyer?",
+			"desc": "",
+			"activity": "10"
+		}, {
+			"text": "After that, how many more minutes did it take before you were driven away from the scene in the police car?",
+			"desc": "",
+			"activity": "10","back_activity":"6",
+"back_activity_to_eight":"8"
+		}]
+	}, {
+		"quesNo": "10",
+		"ques": "When the police told you at the roadside that you had the right to speak to a lawyer was he\bshe reading it, or telling it to you from memory?",
+		"quesType": "single_choice",
+		"optnArry": [{
+			"text": "He\bshe read from a book or card.",
+			"activity": "11"
+		}, {
+			"text": "He/she told me this verbally only.",
+			"activity": "11","back_activity":"9"
+		}, {
+			"text": "He/she never told me I had the right to speak to a lawyer while we were at the roadside.",
+			"activity": "11","back_activity":"9"
+		}]
+	}, {
+		"quesNo": "11",
+		"ques": "When the police told you at the roadside that you had the right to speak to a lawyer was he/she reading it, or telling it to you from memory?",
+		"quesType": "single_choice",
+		"optnArry": [{
+			"text": "Yes",
+			"activity": "12","back_activity":"10"
+		}, {
+			"text": "No thanks.",
+			"activity": "12","back_activity":"10"
+		}, {
+			"text": "“Maybe” or “I don’t know”",
+			"activity": "12","back_activity":"10"
+		}, {
+			"text": "You don’t remember.",
+			"activity": "12","back_activity":"10"
+		}]
+	}, {
+		"quesNo": "12",
+		"ques": "How long did it take to travel from the scene of you being arrested to the police station?",
+		"quesType": "twelve_view",
+		"optnArry": [{
+			"desc": ""
+		}],
+		"secondQues": "Did that time seem appropriate, or did it take much longer than it should have?",
+		"secondOptnArry": [{
+			"text": "About Right",
+			"activity": "13","back_activity":"11"
+		}, {
+			"text": "Much too long",
+			"activity": "13","back_activity":"11"
+		}]
+	}, {
+		"quesNo": "13",
+		"ques": "Once you arrived at the police station were you able to go inside right away or did you have to wait?",
+		"quesType": "thirteen_view",
+		"optnArry": [{
+			"text": "Went inside right away.",
+			"activity": "14","back_activity":"12"
+		}, {
+			"text": "Had to wait (i.e. for police station garage to open)",
+			"subQues": "How long did you have to wait?",
+			"subQuesArr": [{
+				"desc": "",
+				"activity": "14","back_activity":"12"
+			}]
+		}]
+	}, {
+		"quesNo": "14",
+		"ques": "Did you speak to a lawyer at the police station?",
+		"quesType": "double_single_choice",
+		"optnArry": [{
+			"text": "Yes.",
+			"activity": "15"
+		}, {
+			"text": "No",
+			"subQues": "[Why not]?",
+			"subQuesArr": [{
+				"text": "you are not given a chance by the police there",
+				"activity": "17","back_activity":"13"
+			}, {
+				"text": "you declined",
+				"activity": "17","back_activity":"13"
+			},{
+				"text": "You dd not know any and told the police it was o. ",
+				"activity": "17","back_activity":"14"
+			},{
+				"text": "You tried to reach a lawyer but nobody answered.",
+				"activity": "17","back_activity":"13"
+			}]
+		}]
+	}, {
+		"quesNo": "15",
+		"ques": "Were you satisfied that the lawyer you spoke to gave you decent advice?",
+		"quesType": "double_single_choice",
+		"optnArry": [{
+			"text": "Yes.",
+			"activity": "16","back_activity":"14"
+		}, {
+			"text": "No",
+			"subQues": "[Did you express your dissatisfaction to the police?]?",
+			"subQuesArr": [{
+				"text": "No.",
+				"activity": "16","back_activity":"14"
+			}, {
+				"text": "Yes, but you did not get to speak to another lawyer?",
+				"activity": "16","back_activity":"14"
+			}, {
+				"text": "Yes, and you did get to speak to another lawyer.",
+				"activity": "16","back_activity":"14"
+			}]
+		}]
+	}, {
+		"quesNo": "16",
+		"ques": "How long after you arrived at the police station did you get to speak to a lawyer?",
+		"quesType": "double_desc_view",
+		"optnArry": [{
+			"desc": "","activity":"17",
+"back_activity":"15"
+		}],
+		"secondQues": "Approximately how long was the call?",
+		"secondOptnArry": [{
+			"desc": "",
+"activity":"17",
+"back_activity":"15"
+		}]
+	}, {
+		"quesNo": "17",
+		"ques": "After you finished speaking to a lawyer, approximately how long was it before you were brought to the room with the breathalyser?",
+		"quesType": "double_desc_view",
+		"optnArry": [{
+			"desc": "",
+"activity":"18",
+"back_activity":"16",
+"back_activity_to_fourteen":"14"
+		}]
+	}, {
+		"quesNo": "18",
+		"ques": "During the process of providing breath samples into the breathalyser at the police station did anything strange happen?",
+		"quesType": "eighteen_view",
+		"optnArry": [{
+			"desc": "",
+			"activity": "19","back_activity":"17"
+		}]
+	}, {
+		"quesNo": "19",
+		"ques": "What were your breath readings, and at what time were they taken?",
+		"quesType": "ninteen_view",
+		"optnArry": [{
+			"desc": "",
+			"activity": "20","back_activity":"18"
+		}, {
+			"desc": "",
+			"activity": "20","back_activity":"18"
+		}, {
+			"desc": "",
+			"activity": "20","back_activity":"18"
+		}, {
+			"desc": "",
+			"activity": "20","back_activity":"18"
+		}]
+	}, {
+		"quesNo": "20",
+		"ques": "After you had been arrested, but before you gave breath samples at the police station did you drink any alcohol (i.e. hidden flask)",
+		"quesType": "single_choice",
+		"optnArry": [{
+			"text": "Yes.",
+			"activity": "21",
+"back_activity":"19"
+		}, {
+			"text": "No",
+			"activity": "21",
+"back_activity":"19"
+		}]
+	}, {
+		"quesNo": "21",
+		"ques": "Did any police officer make any of these comments to you while you were with police?",
+		"quesType": "multiple_choice",
+"activity": "22",
+		"optnArry": [{
+			"text": "You smelled of booze.",
+			"activity": "22",
+                     "back_activity":"20"
+		}, {
+			"text": "Someone saw you driving erratically.",
+			"activity": "22",
+                     "back_activity":"20"
+		}, {
+			"text": "They (the police) saw you driving erratically.",
+			"activity": "22",
+                     "back_activity":"20"
+		}, {
+			"text": "You were slurring your speech.",
+			"activity": "22",
+                     "back_activity":"20"
+		}, {
+			"text": "You appeared to be unsteady on your feet.",
+			"activity": "22",
+                     "back_activity":"20"
+		}, {
+			"text": "You had difficulty walking properly.",
+			"activity": "22",
+                     "back_activity":"20"
+		}]
+	}, {
+		"quesNo": "22",
+		"ques": "Do you think any of these things are true:","activity": "24",
+		"quesType": "multiple_choice",
+		"optnArry": [{
+			"text": "You smelled of booze.",
+			"activity": "23",
+                   "back_activity":"21"
+		}, {
+			"text": "Someone saw you driving erratically.",
+			"activity": "23",
+                   "back_activity":"21"
+		}, {
+			"text": "They (the police) saw you driving erratically.",
+			"activity": "23",
+                   "back_activity":"21"
+		}, {
+			"text": "You were slurring your speech.",
+			"activity": "23",
+                   "back_activity":"21"
+		}, {
+			"text": "You appeared to be unsteady on your feet.",
+			"activity": "23",
+                   "back_activity":"21"
+		}, {
+			"text": "You had difficulty walking properly.",
+			"activity": "23",
+                   "back_activity":"21"
+		}]
+	}, {
+		"quesNo": "23",
+		"ques": "Do you have explanations to any of the following?",
+		"quesType": "multiple_choice",
+		"optnArry": [{
+			"text": "You smelled of booze.",
+			"activity": "24",
+                    "back_activity":"22",
+			"desc": ""
+		}, {
+			"text": "Someone saw you driving erratically.",
+			"activity": "24",
+                    "back_activity":"22",
+			"desc": ""
+		}, {
+			"text": "They (the police) saw you driving erratically.",
+			"activity": "24",
+			"desc": "",
+                    "back_activity":"22"
+		}, {
+			"text": "You were slurring your speech.",
+			"activity": "24",
+			"desc": "",
+                    "back_activity":"22"
+		}, {
+			"text": "You appeared to be unsteady on your feet.",
+			"activity": "24",
+			"desc": "",
+                    "back_activity":"22"
+		}, {
+			"text": "You had difficulty walking properly.",
+			"activity": "24",
+			"desc": "",
+                    "back_activity":"22"
+		}]
+	}, {
+		"quesNo": "24",
+		"ques": "Did you receive any bad treatment during your time in police custody?",
+		"quesType": "multiple_choice",
+"activity": "25",
+		"optnArry": [{
+			"text": "You were beaten by police.",
+			"activity": "25",
+ "back_activity":"23",
+"back_activity_to_twty_two":"22"
+		}, {
+			"text": "Your handcuffs were too tight.",
+			"activity": "25",
+ "back_activity":"23",
+"back_activity_to_twty_two":"22"
+		}, {
+			"text": "You were denied water.",
+			"activity": "25",
+ "back_activity":"23",
+"back_activity_to_twty_two":"22"
+		}, {
+			"text": "You were denied use of a bathroom.",
+			"activity": "25",
+ "back_activity":"23",
+"back_activity_to_twty_two":"22"
+		}, {
+			"text": "You were given access to a toilet that was under video surveillance.",
+			"activity": "25",
+ "back_activity":"23",
+"back_activity_to_twty_two":"22"
+		}, {
+			"text": "Police were rude to you.",
+			"activity": "25",
+ "back_activity":"23",
+"back_activity_to_twty_two":"22"
+		}, {
+			"text": "Police did not let you check a cell phone, or call a friend to get the name of a lawyer.",
+			"activity": "25",
+ "back_activity":"23",
+"back_activity_to_twty_two":"22"
+		}]
+	}, {
+		"quesNo": "25",
+		"ques": "The police ultimately charged you with?",
+		"quesType": "multiple_choice",
+		"optnArry": [{
+			"text": "Impaired Driving",
+			"activity": "26",
+ "back_activity":"24"
+		}, {
+			"text": "Driving Over the Legal Limit (Over 80)",
+			"activity": "26",
+ "back_activity":"24"
+		}, {
+			"text": "Impaired “Care and Control”",
+			"activity": "26",
+ "back_activity":"24"
+		}, {
+			"text": "Care and Control Over 80",
+			"activity": "26",
+ "back_activity":"24"
+		}, {
+			"text": "Refusal to Provide Breath Sample",
+			"activity": "26",
+ "back_activity":"24"
+		}, {
+			"text": "Dangerous Driving",
+			"activity": "26",
+ "back_activity":"24"
+		}, {
+			"text": "Driving while disqualified",
+			"activity": "26",
+ "back_activity":"24"
+		}, {
+			"text": "Traffic Tickets",
+			"activity": "26",
+ "back_activity":"24"
+		}, {
+			"text": "Other offences",
+			"activity": "26",
+ "back_activity":"24"
+		}, {
+			"text": "Accusation of causing bodily harm",
+			"activity": "26",
+ "back_activity":"24"
+		}, {
+			"text": "Accusation of causing death",
+			"activity": "26",
+ "back_activity":"24"
+		}]
+	}, {
+		"quesNo": "26",
+		"ques": "You were released how long after you finished the breathalyser testing",
+		"quesType": "single_choice",
+		"optnArry": [{
+			"text": "Within an hour",
+"activity":"27",
+"back_activity":"25"
+		}, {
+			"text": "1-2 hours"
+,"activity":"27",
+"back_activity":"25"
+		}, {
+			"text": "More than 2 hour later",
+"activity":"27",
+"back_activity":"25"
+		}]
+	}]
+}

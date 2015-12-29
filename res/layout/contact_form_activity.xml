@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:weightSum="2" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight=".5"
+                android:gravity="center_vertical"
+                android:text="Name:"
+                android:textColor="#fff"
+                android:textSize="17sp" />
+
+            <EditText
+                android:id="@+id/contact_name"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.5"
+                android:background="@drawable/edit_text_bg"
+                android:gravity="center_vertical"
+                android:hint="Name:"
+                android:inputType="text"
+                android:paddingLeft="5dp"
+                android:singleLine="true"
+                android:textColor="#666"
+                android:textColorHint="#666" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:weightSum="2" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight=".5"
+                android:gravity="center_vertical"
+                android:text="E-mail Address:"
+                android:textColor="#fff"
+                android:textSize="17sp" />
+
+            <EditText
+                android:id="@+id/contact_emailid"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.5"
+                android:background="@drawable/edit_text_bg"
+                android:gravity="center_vertical"
+                android:hint="E-mail Address:"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="5dp"
+                android:singleLine="true"
+                android:textColor="#666"
+                android:textColorHint="#666" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:weightSum="2" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight=".5"
+                android:gravity="center_vertical"
+                android:text="Phone Number:"
+                android:textColor="#fff"
+                android:textSize="17sp" />
+
+            <EditText
+                android:id="@+id/contact_phone_no"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.5"
+                android:background="@drawable/edit_text_bg"
+                android:gravity="center_vertical"
+                android:hint="Phone Number:"
+                android:inputType="number"
+                android:paddingLeft="5dp"
+                android:singleLine="true"
+                android:textColor="#666"
+                android:textColorHint="#666" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="150dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/contact_desc"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/edit_text_bg"
+                android:gravity="left"
+                android:hint="Enter your Question here:"
+                android:maxLines="100"
+                android:paddingLeft="5dp"
+                android:textColor="#666"
+                android:textColorHint="#666" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp" >
+
+            <Button
+                android:id="@+id/cont_form_cancel_btn"
+                android:layout_width="110dp"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/cancel_btn" />
+
+            <Button
+                android:id="@+id/cont_form_submit_btn"
+                android:layout_width="110dp"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/submit_btn" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

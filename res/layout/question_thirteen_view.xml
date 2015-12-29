@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/question_thirdteen_question_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:text="Question"
+            android:textColor="#fff"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/thirteen_question"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ques_thirteen1"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#fff" />
+
+            <RadioGroup
+                android:id="@+id/radiogroup"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <RadioButton
+                    android:id="@+id/thirteen1_rd1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/radio_selector"
+                    android:padding="10dp"
+                    android:text="@string/answer_thirteen1_option1"
+                    android:textColor="#fff" />
+
+                <RadioButton
+                    android:id="@+id/thirteen1_rd2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/radio_selector"
+                    android:padding="10dp"
+                    android:text="@string/answer_thirteen1_option2"
+                    android:textColor="#fff" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/thirteen_sub_question_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/thirteen_Sub_question"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ques_thirteen2"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#fff" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                android:weightSum="3" >
+
+                <TextView
+                    android:id="@+id/thirteen_first_option_text1"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/textview_shape"
+                    android:gravity="center"
+                    android:textColor="#fff" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical"
+                    android:text="minutes"
+                    android:textColor="#fff" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" >
+
+        <Button
+            android:id="@+id/prev_btn"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/back_btn" />
+
+        <Button
+            android:id="@+id/next_btn"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/next_btn" />
+    </RelativeLayout>
+
+</RelativeLayout>

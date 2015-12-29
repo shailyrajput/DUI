@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical"
+    android:weightSum="100" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/checkbox_question_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:text="Question"
+            android:textColor="#fff"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="85"
+        android:paddingLeft="10dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/middleLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/buttonLayout"
+            android:layout_below="@+id/checkbox_question_no" >
+
+            <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/checkbox_question_no" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/checkbox_question_txt"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="What best describes how the police initially got involved in your case?"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#fff"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp" >
+
+                        <CheckBox
+                            android:id="@+id/check_btn_one"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical|center"
+                            android:button="@drawable/checkbox_selector"
+                            android:padding="5dp"
+                            android:text="The police pulled you over in a traffic stop."
+                            android:textColor="#fff" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp" >
+
+                        <CheckBox
+                            android:id="@+id/check_btn_two"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical|center"
+                            android:button="@drawable/checkbox_selector"
+                            android:padding="5dp"
+                            android:text="The police pulled you over in a traffic stop."
+                            android:textColor="#fff" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp" >
+
+                        <CheckBox
+                            android:id="@+id/check_btn_three"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical|center"
+                            android:button="@drawable/checkbox_selector"
+                            android:padding="5dp"
+                            android:text="The police pulled you over in a traffic stop."
+                            android:textColor="#fff" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp" >
+
+                        <CheckBox
+                            android:id="@+id/check_btn_four"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical|center"
+                            android:button="@drawable/checkbox_selector"
+                            android:padding="5dp"
+                            android:text="The police pulled you over in a traffic stop."
+                            android:textColor="#fff" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp" >
+
+                        <CheckBox
+                            android:id="@+id/check_btn_five"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical|center"
+                            android:button="@drawable/checkbox_selector"
+                            android:padding="5dp"
+                            android:text="The police pulled you over in a traffic stop."
+                            android:textColor="#fff" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp" >
+
+                        <CheckBox
+                            android:id="@+id/check_btn_six"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical|center"
+                            android:button="@drawable/checkbox_selector"
+                            android:padding="5dp"
+                            android:text="The police pulled you over in a traffic stop."
+                            android:textColor="#fff" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/checkbox_layout7"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:visibility="gone" >
+
+                        <CheckBox
+                            android:id="@+id/check_btn_seven"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical|center"
+                            android:button="@drawable/checkbox_selector"
+                            android:padding="5dp"
+                            android:text="The police pulled you over in a traffic stop."
+                            android:textColor="#fff" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/checkbox_layout8"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:visibility="gone" >
+
+                        <CheckBox
+                            android:id="@+id/check_btn_eight"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical|center"
+                            android:button="@drawable/checkbox_selector"
+                            android:padding="5dp"
+                            android:text="The police pulled you over in a traffic stop."
+                            android:textColor="#fff" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/checkbox_layout9"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:visibility="gone" >
+
+                        <CheckBox
+                            android:id="@+id/check_btn_nine"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical|center"
+                            android:button="@drawable/checkbox_selector"
+                            android:padding="5dp"
+                            android:text="The police pulled you over in a traffic stop."
+                            android:textColor="#fff" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/checkbox_layout10"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:visibility="gone" >
+
+                        <CheckBox
+                            android:id="@+id/check_btn_ten"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical|center"
+                            android:button="@drawable/checkbox_selector"
+                            android:padding="5dp"
+                            android:text="The police pulled you over in a traffic stop."
+                            android:textColor="#fff" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/checkbox_layout11"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:visibility="gone" >
+
+                        <CheckBox
+                            android:id="@+id/check_btn_eleven"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical|center"
+                            android:button="@drawable/checkbox_selector"
+                            android:padding="5dp"
+                            android:text="The police pulled you over in a traffic stop."
+                            android:textColor="#fff" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/common_text"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/common_text"
+                        android:paddingTop="@dimen/activity_horizontal_margin"
+                        android:textColor="@color/yellow"
+                        android:textSize="17dp" />
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" >
+
+            <Button
+                android:id="@+id/prev_btn"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/back_btn" />
+
+            <Button
+                android:id="@+id/next_btn"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/next_btn" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

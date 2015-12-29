@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="#035cab"
+    android:id="@+id/custom_view_relative"
+    android:orientation="vertical"
+    android:padding="2dp" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/custom_view_backbtn"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/backbtn"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <!-- Logo Ends -->
+
+    <TextView
+        android:id="@+id/actiontxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/app_name"
+        android:textColor="#fff"
+        android:textSize="21sp" />
+
+    <ImageView
+        android:id="@+id/logout"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:paddingRight="10dp" />
+
+    <!-- Back button Ends -->
+
+</RelativeLayout>

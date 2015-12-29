@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/question_twelve_question_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:text="Question"
+            android:textColor="#fff"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/twelve_question1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ques_twelve1"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#fff" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                android:weightSum="3" >
+
+                <EditText
+                    android:id="@+id/twelve_first_option_text1"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/textview_shape"
+                    android:gravity="center"
+                    android:hint="00"
+                    android:textColor="#fff" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical"
+                    android:text="minutes"
+                    android:textColor="#fff" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/twelve_sub_question_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/twelve_sub_question"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ques_twelve2"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#fff" />
+
+            <RadioButton
+                android:id="@+id/twelve_sub_rd1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/radio_selector"
+                android:padding="10dp"
+                android:text="@string/answer_twelve2_option1"
+                android:textColor="#fff" />
+
+            <RadioButton
+                android:id="@+id/twelve_sub_rd2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/radio_selector"
+                android:padding="10dp"
+                android:text="@string/answer_twelve2_option2"
+                android:textColor="#fff" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

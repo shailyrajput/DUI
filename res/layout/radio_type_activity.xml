@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical"
+    android:weightSum="100" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="5"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/radio_question_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Question"
+            android:textColor="#fff"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="85"
+        android:orientation="vertical" >
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/radio_btn_question"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="What best describes how the police initially got involved in your case?"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#fff" />
+
+                <RadioGroup
+                    android:id="@+id/radiogroup"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <RadioButton
+                        android:id="@+id/rd1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/radio_selector"
+                        android:padding="10dp"
+                        android:text="The police pulled you over in a traffic stop."
+                        android:textColor="#fff" />
+
+                    <RadioButton
+                        android:id="@+id/rd2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/radio_selector"
+                        android:padding="10dp"
+                        android:text="You drove up to a police “RIDE” spotcheck."
+                        android:textColor="#fff" />
+
+                    <RadioButton
+                        android:id="@+id/rd3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/radio_selector"
+                        android:padding="10dp"
+                        android:text="The police pulled you over in a traffic stop."
+                        android:textColor="#fff" />
+
+                    <RadioButton
+                        android:id="@+id/rd4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/radio_selector"
+                        android:padding="10dp"
+                        android:text="You drove up to a police “RIDE” spotcheck."
+                        android:textColor="#fff" />
+
+                    <RadioButton
+                        android:id="@+id/rd5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/radio_selector"
+                        android:padding="10dp"
+                        android:text="You drove up to a police “RIDE” spotcheck."
+                        android:textColor="#fff" />
+                </RadioGroup>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="10"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/prev_btn"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/back_btn" />
+
+            <Button
+                android:id="@+id/next_btn"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/next_btn" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>
